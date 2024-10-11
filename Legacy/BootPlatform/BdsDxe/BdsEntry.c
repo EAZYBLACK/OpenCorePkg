@@ -225,10 +225,10 @@ BdsBootDeviceSelect (
     //
     // Do the removable Media thing. \EFI\BOOT\boot{machinename}.EFI
     //  machinename is ia32, ia64, x64, ...
-    //
+    // 
     DevicePath = FileDevicePath (
                    FileSystemHandles[Index],
-                   L"\\EFI\\OC\\OpenCore.efi"
+                   L"\\EFI\\Microsoft\\Boot\\Bootmgfw.efi"
                    );
 
     if (DevicePath == NULL) {
