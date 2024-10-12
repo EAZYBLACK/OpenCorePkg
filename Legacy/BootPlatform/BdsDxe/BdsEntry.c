@@ -228,7 +228,7 @@ BdsBootDeviceSelect (
     // 
     DevicePath = FileDevicePath (
                    FileSystemHandles[Index],
-                   L"\\EFI\\Microsoft\\Boot\\Bootmgfw.efi"
+                   L"\\EFI\\refind\\refind.efi"
                    );
 
     if (DevicePath == NULL) {
