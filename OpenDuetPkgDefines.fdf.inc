@@ -17,12 +17,12 @@
   # Required IA32 size is ~1 block bigger than required X64 size for each
   # build, so just use minimum IA32 sizes for both.
 !if ($(TARGET) == RELEASE)
-  NumBlocks          = 0x8        #GenFv image size 0x80000
+  NumBlocks          = 0x10        #GenFv image size 0x80000
 !else
 !if ($(TARGET) == DEBUG)
   NumBlocks          = 0xe        #GenFv image size 0xe0000
 !else
-  NumBlocks          = 0x24       #GenFv image size 0x240000
+  NumBlocks          = 0x26       #GenFv image size 0x240000
 !endif
 !endif 
   FvAlignment        = 16         #FV alignment and FV attributes setting.
