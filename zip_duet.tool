@@ -6,15 +6,7 @@ abort() {
 }
 
   efidirs=(
-    "EFI/BOOT"
-    "EFI/OC/ACPI"
-    "EFI/OC/Drivers"
-    "EFI/OC/Kexts"
     "EFI/OC/Tools"
-    "EFI/OC/Resources/Audio"
-    "EFI/OC/Resources/Font"
-    "EFI/OC/Resources/Image"
-    "EFI/OC/Resources/Label"
     )
 
   # Switch to parent architecture directory (i.e. Build/X64 -> Build).
