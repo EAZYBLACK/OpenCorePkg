@@ -36,8 +36,7 @@ jobs:
       - name: CI Bootstrap
         run: |
           src=$(/usr/bin/curl -LfsS https://raw.githubusercontent.com/acidanthera/ocbuild/master/ci-bootstrap.sh) && eval "$src" || exit 1
-          
-      - run: ./build_oc.tool
+
       - run: ./build_duet.tool
 
       - name: Upload to Artifacts
