@@ -38,6 +38,7 @@ jobs:
           src=$(/usr/bin/curl -LfsS https://raw.githubusercontent.com/acidanthera/ocbuild/master/ci-bootstrap.sh) && eval "$src" || exit 1
 
       - run: ./build_duet.tool
+      - run: ./zip_duet.tool
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v4
