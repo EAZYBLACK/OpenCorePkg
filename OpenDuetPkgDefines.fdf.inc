@@ -86,7 +86,7 @@
 
   # Keyboard input (OpenCore has custom drivers)
   # INF  MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
-  INF  MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+  # INF  MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
 
   # Mouse input (PS/2 is usually customised for touchpad)
   # INF  MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
@@ -107,7 +107,7 @@
 
   # Binary drivers
   # INF  RuleOverride=BINARY OpenCorePkg/Legacy/BinDrivers/HfsPlus.inf
-  # INF  RuleOverride=BINARY OpenCorePkg/Legacy/BinDrivers/OpenUsbKbDxe.inf
+  INF  RuleOverride=BINARY OpenCorePkg/Legacy/BinDrivers/OpenUsbKbDxe.inf
 
   # Boot management
   INF  OpenCorePkg/Legacy/BootPlatform/BdsDxe/BdsDxe.inf
