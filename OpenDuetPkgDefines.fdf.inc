@@ -86,11 +86,11 @@
 
   # Keyboard input (OpenCore has custom drivers)
   # INF  MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
-  # INF  MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+  INF  MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
 
   # Mouse input (PS/2 is usually customised for touchpad)
   # INF  MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
-  # INF  MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
+  INF  MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
 
   # Generic disk I/O (Unicode collation is used by e.g. FAT)
   INF  MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
