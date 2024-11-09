@@ -75,7 +75,6 @@ abort() {
 
   popd || exit 1
   popd || exit 1
-}
 
 cd "$(dirname "$0")" || exit 1
 if [ "$ARCHS" = "" ]; then
